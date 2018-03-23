@@ -30,7 +30,7 @@
     <term><parameter>literal</parameter></term>
     <listitem>
      <para>
-      The initial string content of the (mutable) text node.
+      The text content of the (mutable) text node.
      </para>
     </listitem>
    </varlistentry>
