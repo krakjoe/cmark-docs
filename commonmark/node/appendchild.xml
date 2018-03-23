@@ -73,7 +73,6 @@ $document = new Document();
 $document->appendChild($paragraph);
 
 // <p>Hello Markdown World!</p>
-?>
 ]]>
     </programlisting>
    </example>
