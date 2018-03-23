@@ -10,15 +10,12 @@
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
-   <modifier>public</modifier> <type>ReturnType</type><methodname>CommonMark\Node::insertBefore</methodname>
-   <methodparam><type>Node</type><parameter>sibling</parameter></methodparam>
+   <modifier>public</modifier> <type>######### TODO</type><methodname>CommonMark\Node::insertBefore</methodname>
+   <methodparam><type>CommonMark\Node</type><parameter>sibling</parameter></methodparam>
   </methodsynopsis>
   <para>
    Inserts this node before another node, as sibling of that node.
   </para>
-
-  &warn.undocumented.func;
-
  </refsect1>
 
  <refsect1 role="parameters">
@@ -38,7 +35,7 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-
+   ################################################## TODO
   </para>
  </refsect1>
 
