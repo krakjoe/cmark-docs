@@ -12,7 +12,17 @@
   <section xml:id="commonmark-node.intro">
    &reftitle.intro;
    <para>
-   Represents an Abstract Node, this final abstract is not for direct use by the programmer.
+    Base class for all the Nodes in the markdown document's tree.
+   </para>
+   <para>
+    This class provides basic functionality for the manipulation of the node itself and its
+    children; it is marked as "final abstract" as it can be extended only by the internal
+    classes provided with this extension.
+   </para>
+   <para>
+    The root element of the markdown tree is <classname>CommonMark\Node\Document</classname>.
+    Other nodes are either block nodes or inline nodes, all roughly equivalent to HTML's
+    main tags, like headings, paragraphs, lists, etc.
    </para>
   </section>
 <!-- }}} -->
@@ -31,7 +41,7 @@
       <modifier>abstract</modifier>
       <classname>CommonMark\Node</classname>
      </ooclass>
-     
+
      <oointerface>
       <interfacename>Traversable</interfacename>
      </oointerface>
@@ -42,54 +52,63 @@
     </classsynopsisinfo>
 <!-- }}} -->
     <classsynopsisinfo role="comment">&Properties;</classsynopsisinfo>
+
     <fieldsynopsis>
      <modifier>public</modifier>
      <modifier>readonly</modifier>
      <type>?Node</type>
      <varname>parent</varname>
     </fieldsynopsis>
+
     <fieldsynopsis>
      <modifier>public</modifier>
      <modifier>readonly</modifier>
      <type>?Node</type>
      <varname>previous</varname>
     </fieldsynopsis>
+
     <fieldsynopsis>
      <modifier>public</modifier>
      <modifier>readonly</modifier>
      <type>?Node</type>
      <varname>next</varname>
     </fieldsynopsis>
+
     <fieldsynopsis>
      <modifier>public</modifier>
      <modifier>readonly</modifier>
      <type>?Node</type>
      <varname>lastChild</varname>
     </fieldsynopsis>
+
     <fieldsynopsis>
      <modifier>public</modifier>
      <modifier>readonly</modifier>
      <type>?Node</type>
      <varname>firstChild</varname>
     </fieldsynopsis>
+
     <fieldsynopsis>
      <modifier>public</modifier>
      <modifier>readonly</modifier>
      <type>int</type>
      <varname>startLine</varname>
     </fieldsynopsis>
+
     <fieldsynopsis>
      <modifier>public</modifier>
      <modifier>readonly</modifier>
      <type>int</type>
      <varname>endLine</varname>
     </fieldsynopsis>
+
     <fieldsynopsis>
      <modifier>public</modifier>
      <modifier>readonly</modifier>
      <type>int</type>
      <varname>startColumn</varname>
     </fieldsynopsis>
+
     <fieldsynopsis>
      <modifier>public</modifier>
      <modifier>readonly</modifier>

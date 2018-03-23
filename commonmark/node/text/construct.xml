@@ -18,11 +18,9 @@
    <methodparam><type>string</type><parameter>literal</parameter></methodparam>
   </constructorsynopsis>
   <para>
-
+   Creates a text node; this kind of node cannot contain other nodes, they consist solely in
+   a plain UTF-8 string. This class is roughly equivalent to DOM's Text class.
   </para>
-
-  &warn.undocumented.func;
-
  </refsect1>
 
  <refsect1 role="parameters">
@@ -32,25 +30,47 @@
     <term><parameter>literal</parameter></term>
     <listitem>
      <para>
-      
+      The text content of the (mutable) text node.
      </para>
     </listitem>
    </varlistentry>
   </variablelist>
  </refsect1>
 
- <!-- Return values commented out, as constructors generally don't return a
-      value. Uncomment this if you do need a return values section (for
-      example, because there's also a procedural version of the method).
- <refsect1 role="returnvalues">
-  &reftitle.returnvalues;
+ <refsect1 role="examples">
+  &reftitle.examples;
   <para>
-   
+   <example>
+    <title>Basic usage</title>
+    <programlisting role="php">
+<![CDATA[
+<?php
+use CommonMark\Node\Paragraph;
+use CommonMark\Node\Document;
+use CommonMark\Node\Text;
+
+$text1 = new Text("Hello");
+$text2 = new Text(" Markdown");
+$text3 = new Text(" World!");
+
+$paragraph = new Paragraph();
+$paragraph->appendChild($text1);
+$paragraph->appendChild($text2);
+$paragraph->appendChild($text3);
+
+$document = new Document();
+$document->appendChild($paragraph);
+
+// <p>Hello Markdown World!</p>
+
+$text2->literal = " PHP";
+
+// <p>Hello PHP World!</p>
+]]>
+    </programlisting>
+   </example>
   </para>
  </refsect1>
- -->
-
-
 
 </refentry>
 

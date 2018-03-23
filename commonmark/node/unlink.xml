@@ -10,15 +10,12 @@
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
-   <modifier>public</modifier> <type>ReturnType</type><methodname>CommonMark\Node::unlink</methodname>
+   <modifier>public</modifier> <type>######### TODO</type><methodname>CommonMark\Node::unlink</methodname>
    <void />
   </methodsynopsis>
   <para>
-
+   Removes the node from the document tree it is attached to.
   </para>
-
-  &warn.undocumented.func;
-
  </refsect1>
 
  <refsect1 role="parameters">
@@ -29,10 +26,44 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   
+   ################################################## TODO
   </para>
  </refsect1>
 
+ <refsect1 role="examples">
+  &reftitle.examples;
+  <para>
+   <example>
+    <title>Basic usage</title>
+    <programlisting role="php">
+<![CDATA[
+<?php
+use CommonMark\Node\Paragraph;
+use CommonMark\Node\Document;
+use CommonMark\Node\Text;
+
+$text1 = new Text("Hello");
+$text2 = new Text(" Markdown");
+$text3 = new Text(" World!");
+
+$paragraph = new Paragraph();
+$paragraph->prependChild($text3);
+$paragraph->prependChild($text2);
+$paragraph->prependChild($text1);
+
+$document = new Document();
+$document->prependChild($paragraph);
+
+// <p>Hello Markdown World!</p>
+
+$text2->unlink();
+
+// <p>Hello World!</p>
+]]>
+    </programlisting>
+   </example>
+  </para>
+ </refsect1>
 
 </refentry>
 
