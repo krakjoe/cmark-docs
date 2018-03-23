@@ -14,7 +14,7 @@
    <methodparam><type>Node</type><parameter>sibling</parameter></methodparam>
   </methodsynopsis>
   <para>
-
+   Inserts this node after another node, as sibling, in the document tree.
   </para>
 
   &warn.undocumented.func;
@@ -28,7 +28,7 @@
     <term><parameter>sibling</parameter></term>
     <listitem>
      <para>
-      
+      The node after which this node is to be inserted.
      </para>
     </listitem>
    </varlistentry>
@@ -38,10 +38,15 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-   
+
   </para>
  </refsect1>
 
+ <refsect1 role="errors">
+  &reftitle.errors;
+  <para>Throws <classname>RuntimeException</classname> if the this node is already a child of another node.</para>
+  <para>Throws <classname>RuntimeException</classname> if the sibling node has no parent element.</para>
+ </refsect1>
 
 </refentry>
 

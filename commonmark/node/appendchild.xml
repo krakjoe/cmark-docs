@@ -14,7 +14,7 @@
    <methodparam><type>Node</type><parameter>child</parameter></methodparam>
   </methodsynopsis>
   <para>
-   Appends a node to another node's children's list.
+   Appends a node to another node's list of child-nodes.
   </para>
 
   &warn.undocumented.func;
@@ -28,7 +28,7 @@
     <term><parameter>child</parameter></term>
     <listitem>
      <para>
-
+       The child that is to be appended to the node's list of child-nodes.
      </para>
     </listitem>
    </varlistentry>
@@ -38,16 +38,14 @@
  <refsect1 role="returnvalues">
   &reftitle.returnvalues;
   <para>
-
+   ################################################## TODO
   </para>
  </refsect1>
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>
-   Throws <classname>RuntimeException</classname> if the provided child is the node or
-   a parent of the node, or if the child is already attached to another document.
-  </para>
+  <para>Throws <classname>RuntimeException</classname> if the provided child is this node or a parent of this node.</para>
+  <para>Throws <classname>RuntimeException</classname> if the provided child is already a child of another node.</para>
  </refsect1>
 
  <refsect1 role="examples">
