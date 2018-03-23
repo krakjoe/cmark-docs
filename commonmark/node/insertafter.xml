@@ -44,7 +44,7 @@
 
  <refsect1 role="errors">
   &reftitle.errors;
-  <para>Throws <classname>RuntimeException</classname> if the this node is already a child of another node.</para>
+  <para>Throws <classname>RuntimeException</classname> if this node is already a child of another node.</para>
   <para>Throws <classname>RuntimeException</classname> if the sibling node has no parent element.</para>
  </refsect1>
 
