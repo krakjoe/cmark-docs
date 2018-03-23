@@ -8,15 +8,6 @@
 
  <partintro>
 
-<!-- {{{ CommonMark\Node\CodeBlock intro -->
-  <section xml:id="commonmark-node-codeblock.intro">
-   &reftitle.intro;
-   <para>
-
-   </para>
-  </section>
-<!-- }}} -->
-
   <section xml:id="commonmark-node-codeblock.synopsis">
    &reftitle.classsynopsis;
 
