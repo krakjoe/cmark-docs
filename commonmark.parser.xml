@@ -27,10 +27,14 @@
 <!-- {{{ Class synopsis -->
     <classsynopsisinfo>
      <ooclass>
+      <modifier>final</modifier>
       <classname>CommonMark\Parser</classname>
      </ooclass>
     </classsynopsisinfo>
 <!-- }}} -->
+
+    <classsynopsisinfo role="comment">Constructor</classsynopsisinfo>
+    <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('commonmark-parser.construct')/db:refsect1[@role='description']/descendant::db:constructorsynopsis[not(@role='procedural')])" />
     
     <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.commonmark-parser')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[not(@role='procedural')])" />
@@ -41,7 +45,9 @@
 
  </partintro>
 
- &reference.cmark.entities.commonmark-parser;
+  &reference.cmark.commonmark.parser.construct;
+  &reference.cmark.commonmark.parser.parse;
+  &reference.cmark.commonmark.parser.finish;
 
 </phpdoc:classref>
 

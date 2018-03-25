@@ -3,7 +3,7 @@
 
 <phpdoc:classref xml:id="class.commonmark-node-customblock" xmlns:phpdoc="http://php.net/ns/phpdoc" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
 
- <title>The CommonMark\Node\ class</title>
+ <title>CustomBlock concrete CommonMark\Node</title>
  <titleabbrev>CommonMark\Node\CustomBlock</titleabbrev>
 
  <partintro>
@@ -26,6 +26,10 @@
       <modifier>extends</modifier>
       <classname>CommonMark\Node</classname>
      </ooclass>
+
+     <oointerface>
+      <interfacename>CommonMark\Interfaces\IVisitable</interfacename>
+     </oointerface>
      
      <oointerface>
       <interfacename>Traversable</interfacename>

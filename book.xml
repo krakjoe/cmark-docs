@@ -62,6 +62,7 @@
  &reference.cmark.commonmark.node;
  &reference.cmark.commonmark.interfaces.ivisitor;
  &reference.cmark.commonmark.interfaces.ivisitable;
+ &reference.cmark.commonmark.parser;
  &reference.cmark.reference;
 
 </book>

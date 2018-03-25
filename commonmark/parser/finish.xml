@@ -4,13 +4,13 @@
 <refentry xml:id="commonmark-parser.finish" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>CommonMark\Parser::finish</refname>
-  <refpurpose>Description</refpurpose>
+  <refpurpose>Parsing</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
-   <modifier>public</modifier> <type>ReturnType</type><methodname>CommonMark\Parser::finish</methodname>
+   <modifier>public</modifier> <type>CommonMark\Node</type><methodname>CommonMark\Parser::finish</methodname>
    <void />
   </methodsynopsis>
   <para>

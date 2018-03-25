@@ -7,24 +7,14 @@
  <section xml:id="cmark.requirements">
   &reftitle.required;
   <para>
-
+  The CommonMark extension requires the (C) reference implementation of <link xlink:href="&url.git.hub;commonmark/cmark">cmark</link>.
   </para>
  </section>
 
  <section xml:id="cmark.installation">
   &reftitle.install;
-  &no.install;
- </section>
-
- <section xml:id="cmark.configuration">
-  &reftitle.runtime;
-  &no.config;
- </section>
-
- <section xml:id="cmark.resources">
-  &reftitle.resources;
   <para>
-
+  The CommonMark extension source is hosted on <link xlink:href="&url.git.hub;krakjoe/cmark">github</link>.
   </para>
  </section>
 

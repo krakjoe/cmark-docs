@@ -27,6 +27,7 @@
 <!-- {{{ Class synopsis -->
     <classsynopsisinfo>
      <ooclass>
+      <modifier>final</modifier>
       <classname>CommonMark\Interfaces\IVisitor</classname>
      </ooclass>
     </classsynopsisinfo>
@@ -35,59 +36,25 @@
     <fieldsynopsis>
      <modifier>const</modifier>
      <type>integer</type>
-     <varname linkend="commonmark-interfaces-ivisitor.constants.done">CommonMark\Interfaces\IVisitor::Done</varname>
-     <initializer>1</initializer>
+     <varname>CommonMark\Interfaces\IVisitor::Done</varname>
     </fieldsynopsis>
     <fieldsynopsis>
      <modifier>const</modifier>
      <type>integer</type>
-     <varname linkend="commonmark-interfaces-ivisitor.constants.enter">CommonMark\Interfaces\IVisitor::Enter</varname>
-     <initializer>2</initializer>
+     <varname>CommonMark\Interfaces\IVisitor::Enter</varname>
     </fieldsynopsis>
     <fieldsynopsis>
      <modifier>const</modifier>
      <type>integer</type>
-     <varname linkend="commonmark-interfaces-ivisitor.constants.leave">CommonMark\Interfaces\IVisitor::Leave</varname>
-     <initializer>3</initializer>
+     <varname>CommonMark\Interfaces\IVisitor::Leave</varname>
     </fieldsynopsis>
-    
+
     <classsynopsisinfo role="comment">&Methods;</classsynopsisinfo>
     <xi:include xpointer="xmlns(db=http://docbook.org/ns/docbook) xpointer(id('class.commonmark-interfaces-ivisitor')/db:refentry/db:refsect1[@role='description']/descendant::db:methodsynopsis[not(@role='procedural')])" />
    </classsynopsis>
 <!-- }}} -->
 
   </section>
-  
-<!-- {{{ CommonMark\Interfaces\IVisitor constants -->
-  <section xml:id="commonmark-interfaces-ivisitor.constants">
-   &reftitle.constants;
-   <variablelist>
-
-    <varlistentry xml:id="commonmark-interfaces-ivisitor.constants.done">
-     <term><constant>CommonMark\Interfaces\IVisitor::Done</constant></term>
-     <listitem>
-      <para></para>
-     </listitem>
-    </varlistentry>
-
-    <varlistentry xml:id="commonmark-interfaces-ivisitor.constants.enter">
-     <term><constant>CommonMark\Interfaces\IVisitor::Enter</constant></term>
-     <listitem>
-      <para></para>
-     </listitem>
-    </varlistentry>
-
-    <varlistentry xml:id="commonmark-interfaces-ivisitor.constants.leave">
-     <term><constant>CommonMark\Interfaces\IVisitor::Leave</constant></term>
-     <listitem>
-      <para></para>
-     </listitem>
-    </varlistentry>
-
-   </variablelist>
-  </section>
-<!-- }}} -->
-
 
  </partintro>
 

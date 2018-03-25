@@ -31,14 +31,15 @@
       <modifier>abstract</modifier>
       <classname>CommonMark\Node</classname>
      </ooclass>
+
+     <oointerface>
+      <interfacename>CommonMark\Interfaces\IVisitable</interfacename>
+     </oointerface>
      
      <oointerface>
       <interfacename>Traversable</interfacename>
      </oointerface>
 
-     <oointerface>
-      <interfacename>CommonMark\Interfaces\IVisitable</interfacename>
-     </oointerface>
     </classsynopsisinfo>
 <!-- }}} -->
     <classsynopsisinfo role="comment">&Properties;</classsynopsisinfo>

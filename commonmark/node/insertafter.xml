@@ -4,14 +4,14 @@
 <refentry xml:id="commonmark-node.insertafter" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>CommonMark\Node::insertAfter</refname>
-  <refpurpose>Description</refpurpose>
+  <refpurpose>AST Manipulation</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
-   <modifier>public</modifier> <type>ReturnType</type><methodname>CommonMark\Node::insertAfter</methodname>
-   <methodparam><type>Node</type><parameter>sibling</parameter></methodparam>
+   <modifier>public</modifier> <type>CommonMark\Node</type><methodname>CommonMark\Node::insertAfter</methodname>
+   <methodparam><type>CommonMark\Node</type><parameter>sibling</parameter></methodparam>
   </methodsynopsis>
   <para>
 

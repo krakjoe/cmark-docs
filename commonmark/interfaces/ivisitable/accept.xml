@@ -4,20 +4,15 @@
 <refentry xml:id="commonmark-interfaces-ivisitable.accept" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>CommonMark\Interfaces\IVisitable::accept</refname>
-  <refpurpose>Description</refpurpose>
+  <refpurpose>Visitation</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
-   <modifier>abstract</modifier> <modifier>public</modifier> <type>ReturnType</type><methodname>CommonMark\Interfaces\IVisitable::accept</methodname>
-   <methodparam><type>IVisitor</type><parameter>visitor</parameter></methodparam>
+   <modifier>abstract</modifier> <modifier>public</modifier> <type>void</type><methodname>CommonMark\Interfaces\IVisitable::accept</methodname>
+   <methodparam><type>CommonMark\Interfaces\IVisitor</type><parameter>visitor</parameter></methodparam>
   </methodsynopsis>
-  <para>
-
-  </para>
-
-  &warn.undocumented.func;
 
  </refsect1>
 
@@ -28,20 +23,20 @@
     <term><parameter>visitor</parameter></term>
     <listitem>
      <para>
-      
+      An object implementing <classname>CommonMark\Interfaces\IVisitor</classname>
      </para>
     </listitem>
    </varlistentry>
   </variablelist>
  </refsect1>
 
- <refsect1 role="returnvalues">
-  &reftitle.returnvalues;
-  <para>
-   
-  </para>
- </refsect1>
-
+ <refsect1 role="seealso">
+   &reftitle.seealso;
+   <simplelist>
+    <member><xref linkend="commonmark-interfaces-ivisitor.enter" /></member>
+    <member><xref linkend="commonmark-interfaces-ivisitor.leave" /></member>
+   </simplelist>
+  </refsect1>
 
 </refentry>
 

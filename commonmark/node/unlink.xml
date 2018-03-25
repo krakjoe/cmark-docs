@@ -4,13 +4,13 @@
 <refentry xml:id="commonmark-node.unlink" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>CommonMark\Node::unlink</refname>
-  <refpurpose>Description</refpurpose>
+  <refpurpose>AST Manipulation</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
   &reftitle.description;
   <methodsynopsis>
-   <modifier>public</modifier> <type>ReturnType</type><methodname>CommonMark\Node::unlink</methodname>
+   <modifier>public</modifier> <type>void</type><methodname>CommonMark\Node::unlink</methodname>
    <void />
   </methodsynopsis>
   <para>

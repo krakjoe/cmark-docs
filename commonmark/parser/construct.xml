@@ -4,14 +4,14 @@
 <refentry xml:id="commonmark-parser.construct" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink">
  <refnamediv>
   <refname>CommonMark\Parser::__construct</refname>
-  <refpurpose>Description</refpurpose>
+  <refpurpose>Parsing</refpurpose>
  </refnamediv>
 
  <refsect1 role="description">
   &reftitle.description;
   <constructorsynopsis>
    <modifier>public</modifier> <methodname>CommonMark\Parser::__construct</methodname>
-   <methodparam choice="opt"><type>string</type><parameter>options</parameter></methodparam>
+   <methodparam choice="opt"><type>int</type><parameter>options</parameter></methodparam>
   </constructorsynopsis>
   <para>
 
@@ -28,25 +28,54 @@
     <term><parameter>options</parameter></term>
     <listitem>
      <para>
-      
+      A mask of:
      </para>
+     <variablelist>
+     <varlistentry>
+      <term>
+       <constant>CommonMark\Parser\Normal</constant>
+       (<type>integer</type>)
+      </term>
+      <listitem>
+       <simpara>
+       </simpara>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term>
+       <constant>CommonMark\Parser\Normalize</constant>
+       (<type>integer</type>)
+      </term>
+      <listitem>
+       <simpara>
+       </simpara>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term>
+       <constant>CommonMark\Parser\ValidateUTF8</constant>
+       (<type>integer</type>)
+      </term>
+      <listitem>
+       <simpara>
+       </simpara>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term>
+       <constant>CommonMark\Parser\Smart</constant>
+       (<type>integer</type>)
+      </term>
+      <listitem>
+       <simpara>
+       </simpara>
+      </listitem>
+     </varlistentry>
+     </variablelist>
     </listitem>
    </varlistentry>
   </variablelist>
  </refsect1>
-
- <!-- Return values commented out, as constructors generally don't return a
-      value. Uncomment this if you do need a return values section (for
-      example, because there's also a procedural version of the method).
- <refsect1 role="returnvalues">
-  &reftitle.returnvalues;
-  <para>
-   
-  </para>
- </refsect1>
- -->
-
-
 
 </refentry>
 
